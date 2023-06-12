@@ -44,3 +44,4 @@ Profile.propTypes={
     name: PropTypes.string.isRequired,
 
 };// proptypes will throw error on run time, interfaces will just throw error because of typescript but will not throw a runtime error. so something like name should be manditory. so make it a proptype and not just interface.
+

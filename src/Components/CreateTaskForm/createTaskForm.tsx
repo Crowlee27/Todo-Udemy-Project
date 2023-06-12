@@ -3,6 +3,9 @@ import { Box, Typography, Stack } from "@mui/material";
 import { TaskTitleField } from "./_taskTitleField";
 import { TaskDescriptionField } from "./_taskDescriptionField";
 import { TaskDateField } from "./_taskDateField";
+import { TaskSelectField } from "./_taskSelectField";
+import { Status } from "./enums/Status";
+import { Priority } from "./enums/Priority";
 
 export const CreateTaskForm: FC = (): ReactElement => {
   return (
@@ -18,15 +21,46 @@ export const CreateTaskForm: FC = (): ReactElement => {
         Create a Task
       </Typography>
 
-      <Stack sx={{ width: "100%" }} spacing={2}> 
+      <Stack sx={{ width: "100%" }} spacing={2}>
         <TaskTitleField />
         <TaskDescriptionField />
         <TaskDateField />
+        <Stack sx={{ width: "100%" }} direction="row" spacing={2}>
+          <TaskSelectField
+            label="Status"
+            name="Status"
+            items={[
+              {
+                value: Status.todo, // these values come from the enum
+                label: Status.todo,
+              },
+              {
+                value: Status.inProgress,
+                label: Status.inProgress,
+              },
+            ]}
+          />
+          <TaskSelectField
+            label="Priority"
+            name="Priority"
+            items={[
+              {
+                value: Priority.low,
+                label: Priority.low,
+              },
+              {
+                value: Priority.normal,
+                label: Priority.normal,
+              },
+              {
+                value: Priority.high,
+                label: Priority.high,
+              },
+            ]}
+          />
+        </Stack>
       </Stack>
 
-      {/* {task due date} */}
-      {/* {task priority} */}
-      {/* {task status} */}
       {/* {task submit button} */}
     </Box>
   );
