@@ -22,7 +22,7 @@ export const Sidebar: FC = (): ReactElement => {
       }}
     >
       <Profile name="Cory"/>
-      <CreateTaskForm />
-    </Grid>
+      <CreateTaskForm /> 
+    </Grid> //add grid so it can have an adaptive layout with screen size. profile and createtaskform are components that are imported from other files. easier to make them in their own files and import them here.
   );
 };
