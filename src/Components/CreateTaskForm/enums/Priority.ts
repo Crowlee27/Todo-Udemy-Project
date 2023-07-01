@@ -3,3 +3,5 @@ export enum Priority {
     normal = "Normal",
     low = "Low"
 }
+// instead use
+// export type Priority = "High" | "Normal" | "Low";

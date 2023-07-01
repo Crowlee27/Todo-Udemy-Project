@@ -2,7 +2,7 @@ import {FC,ReactElement} from "react";
 import {Box,Chip ,Typography} from "@mui/material";
 import { ITaskHeader } from "./Interfaces/ITaskHeader";
 import {format} from "date-fns";
-import { PropTypes} from "prop-types";
+
 
 
 
@@ -24,7 +24,3 @@ const {title =  "Default Title",
     </Box>
 }
 
-TaskHeader.propTypes = {
-    title: PropTypes.string,
-    date: PropTypes.instanceOf(Date),
-}

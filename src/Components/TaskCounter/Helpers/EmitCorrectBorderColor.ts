@@ -1,8 +1,8 @@
 import { Status } from "../../CreateTaskForm/enums/Status";
-import { TaskCOunterStatusType } from "../Interfaces/ITaskCounter";
+import { TaskCounterStatusType } from "../Interfaces/ITaskCounter";
 
 export const emitCorrectBorderColor = (
-  status: TaskCOunterStatusType
+  status: TaskCounterStatusType
 ): string => {
   switch (status) {
     case Status.todo:

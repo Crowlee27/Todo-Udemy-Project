@@ -1,6 +1,6 @@
 import { Priority } from './../../CreateTaskForm/enums/Priority';
 import { ITaskHeader } from "./ITaskHeader";
-import { ITaskDescription } from "./ITaskDecription";
+import { ITaskDescription } from "./ITaskDescription";
 import { ITaskFooter } from "./ITaskFooter";
 
 

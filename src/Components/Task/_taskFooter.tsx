@@ -1,7 +1,6 @@
 import {FC,ReactElement} from "react";
 import {Box, Button ,FormControlLabel,Switch} from "@mui/material";
 import { ITaskFooter } from "./Interfaces/ITaskFooter";
-import { PropTypes } from "prop-types"
 
 export const TaskFooter: FC<ITaskFooter> = (props,): ReactElement => {
     //destructure props
@@ -33,7 +32,3 @@ export const TaskFooter: FC<ITaskFooter> = (props,): ReactElement => {
     )
 }
 
-TaskFooter.propTypes = {
-    onStatusChange: PropTypes.func,
-    onClick: PropTypes.func,
-}

@@ -6,7 +6,7 @@ import { TaskFooter } from "./_taskFooter";
 import { ITask } from "./Interfaces/ITask";
 import { Status } from "../CreateTaskForm/enums/Status";
 import { Priority } from "../CreateTaskForm/enums/Priority";
-import PropTypes from "prop-types";
+
 import { renderPriorityBorderColor } from "./Helpers/renderPriorityBorderColor";
 
 export const Task: FC<Itask> = (props): ReactElement => {
@@ -45,13 +45,3 @@ const {
     </Box>
   );
 };
-
-Task.propTypes = {
-    title: PropTypes.string,
-    date: PropTypes.instanceOf(Date),
-    description: PropTypes.string,
-    onStatusChange: PropTypes.func,
-    onClick: PropTypes.func,
-    priority: PropTypes.string,
-    status: PropTypes.string,
-}

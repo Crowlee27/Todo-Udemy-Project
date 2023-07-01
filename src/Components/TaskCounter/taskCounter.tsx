@@ -4,7 +4,6 @@ import { ITaskCounter } from "./Interfaces/ITaskCounter";
 import { Status } from "../CreateTaskForm/enums/Status";
 import { emitCorrectBorderColor } from "./Helpers/EmitCorrectBorderColor";
 import { emitCorrectLabel } from "./Helpers/EmitCorrectLabel";
-import PropTypes from "prop-types";
 
 export const TaskCounter: FC<ITaskCounter> = (props): ReactElement => {
   //destructure props
@@ -46,8 +45,3 @@ export const TaskCounter: FC<ITaskCounter> = (props): ReactElement => {
 };
 
 
-TaskCounter.propTypes = {
-    count: PropTypes.number,
-    status: PropTypes.oneOf([Status.todo, Status.inProgress, Status.completed]),
-    
-}

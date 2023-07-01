@@ -1,8 +1,8 @@
-import { TaskCOunterStatusType } from "../Interfaces/ITaskCounter"
+import { TaskCounterStatusType } from "../Interfaces/ITaskCounter"
 import { Status } from "../../CreateTaskForm/enums/Status"
 
 
-export const emitCorrectLabel = (status: TaskCOunterStatusType): string => {
+export const emitCorrectLabel = (status: TaskCounterStatusType): string => {
 switch (status) {
     case Status.todo:
         return "To Do"

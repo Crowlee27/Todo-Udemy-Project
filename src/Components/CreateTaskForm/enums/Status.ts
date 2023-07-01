@@ -3,3 +3,6 @@ export enum Status {
     inProgress = "In Progress",
     completed = "Completed"
 }
+
+//instead us 
+//  Type Status = "Todo" | "In Progress" | "Completed";

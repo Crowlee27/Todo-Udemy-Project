@@ -1,7 +1,7 @@
 import { FC, ReactElement } from "react";
 import { TextField } from "@mui/material";
-import { ITextfield } from "./Interfaces/ITextfield";
-import { PropTypes } from "prop-types";
+
+
 
 export const TaskTitleField: FC<ITextfield> = (props): ReactElement => {
   //destructure props
@@ -21,7 +21,4 @@ export const TaskTitleField: FC<ITextfield> = (props): ReactElement => {
   );
 };
 
-TaskTitleField.propTypes = {
-  onChange: PropTypes.func,
-  disabled: PropTypes.bool,
-};
+
