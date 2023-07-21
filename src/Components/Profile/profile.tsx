@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import { Avatar, Box, Typography } from "@mui/material";
-import PropTypes  from "prop-types"
+// import PropTypes  from "prop-types"
 
 interface IProfile{
     name?:string;
@@ -40,8 +40,8 @@ export const Profile: FC<IProfile> = (props,): ReactElement => {
 };
 
 
-Profile.propTypes={ 
-    name: PropTypes.string.isRequired,
+// Profile.propTypes={ 
+//     name: PropTypes.string.isRequired,
 
-};// proptypes will throw error on run time, interfaces will just throw error because of typescript but will not throw a runtime error. so something like name should be manditory. so make it a proptype and not just interface.
+// };// proptypes will throw error on run time, interfaces will just throw error because of typescript but will not throw a runtime error. so something like name should be manditory. so make it a proptype and not just interface.
 

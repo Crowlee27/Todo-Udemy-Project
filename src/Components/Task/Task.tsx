@@ -8,8 +8,9 @@ import { Status } from "../CreateTaskForm/enums/Status";
 import { Priority } from "../CreateTaskForm/enums/Priority";
 
 import { renderPriorityBorderColor } from "./Helpers/renderPriorityBorderColor";
+import id from "date-fns/esm/locale/id/index.js";
 
-export const Task: FC<Itask> = (props): ReactElement => {
+export const Task: FC<ITask> = (props): ReactElement => {
 //destructuring props
 
 const {
@@ -19,7 +20,8 @@ const {
     priority = Priority.normal, 
     status = Status.completed, 
     onStatusChange = (e)=>console.log(e), 
-    onClick = (e)=>console.log(e)
+  onClick = (e) => console.log(e),
+    id,
 } = props;
 
 
@@ -41,7 +43,10 @@ const {
     >
       <TaskHeader title={title} date={date} />
       <TaskDescription description={description}/>
-      <TaskFooter onClick={onClick} onStatusChange={onStatusChange} />
+      <TaskFooter
+        id={id}
+        status={status}
+        onClick={onClick} onStatusChange={onStatusChange} />
     </Box>
   );
 };

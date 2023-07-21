@@ -21,6 +21,8 @@
         "react"
     ],
     "rules": {
+        "no-empy-function": "off",
+        "@typescript-eslint/no-empty-function": "off",
     },
     "settings":{
         "import/resolver":{
